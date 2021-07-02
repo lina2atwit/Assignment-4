@@ -14,17 +14,17 @@ class UserLogin
     void login()
     {
         cout << "Welcome to our scheduling system. Please log in to continue!";
-        cout << "Username: "
+        cout << "Username: ";
         cin >> userNameAttempt;
 
-        userName = getFile("users.dat");
+        userName = getFile(""); //some data file can be inpu here
 
         if(userNameAttempt == userName)
         {
             cout << "Password:";
             cin >> passwordAttempt;
 
-            passWord = getFile("pswds.dat");
+            passWord = getFile("");/// some data file can be input here
 
             if(passwordAttempt == passWord)
             {
